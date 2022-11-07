@@ -29,13 +29,13 @@
 
                     <ul class="header-nav-list">
                         <li class="header-nav-item">
-                            <a class="header-nav-link" href="./index.html">Студія</a>
+                            <a class="header-nav-link current" href="./index.html">Студія</a>
                         </li>
                         <li class="header-nav-item">
-                            <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
+                            <a class="header-nav-link " href="./portfolio.html">Портфоліо</a>
                         </li>
                         <li class="header-nav-item">
-                            <a class="header-nav-link" href="#">Контакти</a>
+                            <a class="header-nav-link " href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -67,7 +67,7 @@
             <section class="section hero hero-background">
                 <div class="container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="hero-btn" type="button">Замовити послугу</button>
+                    <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
                 </div>
             </section>
 
@@ -131,19 +131,28 @@
                 <div class="container">
                     <h2 class="img-box-title title">Чим ми займаємося</h2>
                     <ul class="img-box-list">
-                        <div class="wraper">
+                        
                         <li class="img-box-item">
                             <img src="./images//box1.jpg" alt="фото програмування" width="370" />
+                            <div class="box-title">
+                            <p class="box-style-title desk-add">Десктопні додатки</p>
+                        </div>
                         </li>
-                        <div class="overlay-box"></div>
-                        <p></p>
-                    </div>
+        
                         <li class="img-box-item">
                             <img src="./images//box2.jpg" alt="фото телефону" width="370" />
+                            <div class="box-title">
+                                <p class="box-style-title phone-add">Мобільні додатки</p>
+                            </div>
                         </li>
+
                         <li class="img-box-item">
                             <img src="./images//box3.jpg" alt="фото планшету" width="370" />
+                            <div class="box-title">
+                                <p class="box-style-title desine">Дизайнерські рішення</p>
+                            </div>
                         </li>
+
                     </ul>
                 </div>
             </section>
@@ -153,7 +162,7 @@
                     <div class="team">
                         <h2 class="title-team">Наша команда</h2>
                         <ul class="list-team">
-                            <li class="card-styles card">
+                            <li class="card-styles card">                                
                                 <img src="./images//img0.jpg" alt="Фото Ігор Дем'яненко" width="270" />
                                 <div class="team-card-div">
                                     <h3 class="title-name">Ігор Дем'яненко</h3>
@@ -361,17 +370,17 @@
                         
                     <address class="footer-adress">
                         <ul class="footer-list">
-                            <li>
-                                <a class="footer-adress-link link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                            <li class="link">
+                                <a class="footer-adress-link " href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                                     target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки,
                                     26</a>
                             </li>
-                            <li>
-                                <a class="footer-contact-link link" href="mailto:info@devstudio.com"
+                            <li class="link">
+                                <a class="footer-contact-link " href="mailto:info@devstudio.com"
                                     lang="en">info@devstudio.com</a>
                             </li>
-                            <li>
-                                <a class="footer-contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <li class="link">
+                                <a class="footer-contact-link " href="tel:+380961111111">+38 096 111 11 11</a>
                             </li>
                         </ul>
                     </address>
@@ -400,7 +409,18 @@
                 
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-btn" data-modal-close>
+                    <svg class="icon icon-close" width="11px" height="11px">
+                        <use href="./images/icons.svg#icon-close">
+                        </use>
+                    </svg>
+                </button>
 
+</div>
+        </div>
+        <script src="./modal.js"></script>
 </body>
 
 </html>
