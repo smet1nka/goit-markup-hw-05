@@ -8,7 +8,8 @@ ul {
 }
 a {
     text-decoration: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 img {
     display: block;
@@ -17,13 +18,16 @@ img {
 
 button {
     cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 :hover{
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 :focus{
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .container {
     width: 1200px;
@@ -33,6 +37,8 @@ button {
     
    
 }
+
+
 /*root*/
 :root{
     --second-font: 'Raleway';
@@ -54,6 +60,8 @@ body {
     width: 100%;
     top:0;
     left: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 .header-container{
     display: flex;
@@ -134,7 +142,7 @@ fill: #2196F3;
 .header-nav-link::after{
     content:'' ;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
 
     display: block;
@@ -143,7 +151,8 @@ fill: #2196F3;
 
     border-radius: 2px;
     background-color:#2196F3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
     opacity: 0;
 
 }
@@ -577,8 +586,8 @@ margin-bottom: 50px;
     
 .footer-container{
 
-display: flex;
-align-items: baseline;
+            display: flex;
+            align-items: baseline;
 
 }
 
@@ -603,7 +612,7 @@ align-items: baseline;
 
 }
 .link:not(:first-child){
-    margin-top: 9px;
+            margin-top: 9px;
 }
 
    
@@ -622,7 +631,7 @@ align-items: baseline;
 }
 
 .btn-nav-li:not(:first-child){
-    margin-left: 8px;
+            margin-left: 8px;
 }
 
 
@@ -640,52 +649,52 @@ align-items: baseline;
 
 .folow{
     
-    margin-left: 70px;
+            margin-left: 70px;
     
 }
 
 .footer-icon{ 
   
-   justify-content: center;
+           justify-content: center;
    
-   align-items: center;
+           align-items: center;
     
     
    
 }
 .footer-link-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);;
-    border-radius: 50%;
-    fill: #FFFFFF;;
+            width: 44px;
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.1);;
+            border-radius: 50%;
+            fill: #FFFFFF;;
 }
 .footer-link-icon:hover,
 .footer-link-icon:focus{
-    background-color: #2196F3;
+            background-color: #2196F3;
 }
 
 
 .footer-icon-title{
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-display: block;
-color: #FFFFFF;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            display: block;
+            color: #FFFFFF;
 
 
 
 }
 .footer-icon-item{
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
 }
 
 
@@ -693,8 +702,8 @@ color: #FFFFFF;
 
 /*portfolio*/
 .section-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+            padding-top: 94px;
+            padding-bottom: 94px;
     
 }
 
@@ -707,14 +716,13 @@ color: #FFFFFF;
 
 
 
-    
-
+        
 
 
 
 .btn-nav-li{
     
-border-radius: 4px;
+            border-radius: 4px;
 }
 
 .btn-nav {
@@ -757,7 +765,7 @@ border-radius: 4px;
     
 }
 .item {
-display: block;
+    display: block;
 
 
 }
@@ -800,10 +808,10 @@ display: block;
     border-top: 0px;
 
 
-padding-left: 24px;
-padding-right: 24px;
-padding-top: 20px;
-padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .card-thumb{
     position: relative;
@@ -824,7 +832,8 @@ padding-bottom: 20px;
 
     background: rgba(33, 150, 243, 0.9);
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .overlay-text{
     font-weight: 400;
@@ -840,7 +849,7 @@ padding-bottom: 20px;
 }
 
 .item:hover .overlay{
-transform: translateY(0);
+    transform: translateY(0);
 }
 
  
@@ -857,7 +866,8 @@ transform: translateY(0);
     opacity: 1;
     pointer-events: initial;
     visibility: visible;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .backdrop.is-hidden {
