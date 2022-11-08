@@ -8,8 +8,7 @@ ul {
 }
 a {
     text-decoration: none;
-    transition-duration: 250ms ;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+  
 }
 img {
     display: block;
@@ -18,16 +17,13 @@ img {
 
 button {
     cursor: pointer;
-    transition-duration: 250ms ;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
 }
 :hover{
-    transition-duration: 250ms ;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+   
 }
 :focus{
-    transition-duration: 250ms ;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    
 }
 .container {
     width: 1200px;
@@ -151,8 +147,7 @@ fill: #2196F3;
 
     border-radius: 2px;
     background-color:#2196F3;
-    transition-duration: 250ms ;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
     opacity: 0;
 
 }
@@ -162,6 +157,9 @@ fill: #2196F3;
 .header-nav-link:focus::after{
     opacity: 1;
     color: var(--second-color);
+    transition-property: color, opacity;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
 /*93 215*/
@@ -206,6 +204,9 @@ fill: #2196F3;
 .header-contact-link:hover,
 .header-contact-link:focus {
     color: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
@@ -263,6 +264,9 @@ fill: #2196F3;
 .hero-btn:hover,
 .hero-btn:focus {
             background-color: #188CE8;
+            transition-property: background-color;
+            transition-duration: 250ms ;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
@@ -374,21 +378,21 @@ fill: #2196F3;
 .box-style-title{
    
    
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
 
-letter-spacing: 0.03em;
-text-transform: uppercase;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
 
 
-color: #FFFFFF;
-background-color: rgba(47, 48, 58, 0.8);
+            color: #FFFFFF;
+            background-color: rgba(47, 48, 58, 0.8);
 
-padding-top: 27px;
-padding-bottom: 27px;
+            padding-top: 27px;
+            padding-bottom: 27px;
 }
-.desk-add{
+.desk-add{ 
     padding-right: 107px;
     padding-left: 107px;
    
@@ -457,14 +461,17 @@ padding-bottom: 27px;
 .social-link:hover,
 .social-link:focus{
     background-color: #2196F3;
-    
+    transition-property: background-color;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-.social-icons{
-    fill:#AFB1B8;
-}
+
 
 .social-link:hover, .social-icon{
     fill: #FFFFFF;
+    transition-property: fill;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
@@ -555,6 +562,10 @@ margin-bottom: 50px;
 .client-link:focus{
     border-color: #2196F3;
     color: #2196F3;
+    transition-property:border-color, color ;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+
     
 }
 .client-icon{
@@ -628,6 +639,9 @@ margin-bottom: 50px;
 .footer-adress-link:hover,
 .footer-adress-link:focus{        
             color: var(--second-color);
+            transition-property: color;
+            transition-duration: 250ms ;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .btn-nav-li:not(:first-child){
@@ -645,6 +659,9 @@ margin-bottom: 50px;
 .footer-contact-link:hover,
 .footer-contact-link:focus {
             color: var(--second-color);
+            transition-property: color;
+            transition-duration: 250ms ;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .folow{
@@ -676,6 +693,9 @@ margin-bottom: 50px;
 .footer-link-icon:hover,
 .footer-link-icon:focus{
             background-color: #2196F3;
+            transition-property: background-color;
+            transition-duration: 250ms ;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 
@@ -750,6 +770,9 @@ margin-bottom: 50px;
             background-color: var(--second-color);
             color: var(--element-font-color);
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            transition-property: background-color, color;
+            transition-duration: 250ms ;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .card-list  {
@@ -773,6 +796,9 @@ margin-bottom: 50px;
 .item:hover,
 .item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-property: box-shadow;
+    transition-duration: 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
 
@@ -831,7 +857,7 @@ margin-bottom: 50px;
     align-items: center;
 
     background: rgba(33, 150, 243, 0.9);
-
+    transition-property:  transform ;
     transition-duration: 250ms ;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
@@ -866,6 +892,7 @@ margin-bottom: 50px;
     opacity: 1;
     pointer-events: initial;
     visibility: visible;
+    transition-property: opacity, visibility;
     transition-duration: 250ms ;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
@@ -887,18 +914,21 @@ margin-bottom: 50px;
 
 }
 .close-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 8px;
+            right: 8px;
 
 
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition-property: background-color;
+            transition-duration: 250ms ;
+            transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
