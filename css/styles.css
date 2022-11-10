@@ -482,6 +482,10 @@ fill: #2196F3;
     transition-duration: 250ms ;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+.socials-icon {
+    transition-property: fill;
+    transition-duration: 250ms ;
+}
 
 
 
@@ -773,7 +777,7 @@ margin-bottom: 50px;
             padding: 6px 22px 6px 22px;
             margin: 0 auto;
             border: none;
-            transition-property: background-color, color;
+            transition-property: background-color, color,box-shadow;
             transition-duration: 250ms ;
             transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
             
